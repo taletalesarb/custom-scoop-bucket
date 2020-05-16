@@ -22,7 +22,7 @@ z{
     "shortcuts": [
         [
             "bin\\tableau.exe",
-            "Tableau"
+            "tableau"
         ]
     ],
     "checkver": {
