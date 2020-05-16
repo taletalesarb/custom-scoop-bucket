@@ -1,1 +1,39 @@
 { version: "2020.2.0", url: "https://downloads.tableau.com/tssoftware/TableauDesktop-64bit-2020-2-0.exe", bin: "TableauDesktop-64bit-2020-2-0.exe" }
+{
+    "homepage": "https://www.tableau.com/",
+    "description": "Interactive data visualization software",
+    "version": "2020.2.0",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.tableau.com/tssoftware/TableauDesktop-64bit-2020-2-0.exe"
+        }
+    },
+    "depends": "dark",
+    "installer": {
+        "script": [
+            "Expand-DarkArchive -Path \"$dir\\$fname\" -DestinationPath \"$dir\\extracted\" -Removal",
+            "Rename-Item @(Get-ChildItem \"$dir\\extracted\\AttachedContainer\\tableau-setup*.msi\")[0] -NewName \"$dir\\extracted\\AttachedContainer\\tableau-setup.msi\"",
+            "Expand-MsiArchive \"$dir\\extracted\\AttachedContainer\\tableau-setup.msi\" \"$dir\"",
+            "Move-Item \"$dir\\Tableau\\Tableau*\\*\" \"$dir\" -Force",
+            "# Remove-Item \"$dir\\extracted\", \"$dir\\Tableau\" -Force -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "bin\\tableau.exe",
+            "Tableau"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.tableau.com/support/releases",
+        "regex": "releases/desktop/([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.tableau.com/esdalt/$version/TableauDesktop-64bit-$majorVersion-$minorVersion-$patchVersion.exe"
+            }
+        }
+    }
+}
