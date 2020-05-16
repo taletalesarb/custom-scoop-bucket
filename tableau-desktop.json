@@ -1,11 +1,12 @@
-{
+z{
     "homepage": "https://www.tableau.com/",
     "description": "Interactive data visualization software",
     "version": "2020.2.0",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.tableau.com/tssoftware/TableauDesktop-64bit-2020-2-0.exe"
+            "url": "https://downloads.tableau.com/tssoftware/TableauDesktop-64bit-2020-2-0.exe",
+            "hash": "53418FFB683644BBC8290FD21EF0605F3F6DF09121E882224368A863D679960F"
         }
     },
     "depends": "dark",
