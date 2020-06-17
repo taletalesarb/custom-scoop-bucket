@@ -1,7 +1,7 @@
 {
     "homepage": "https://www.toggl.com/",
     "description": "Time Tracking for Tech Companies",
-    "version": "7.5.162",
+    "version": "7.5.119",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
