@@ -1,0 +1,24 @@
+{
+    "homepage": "https://www.toggl.com/",
+    "description": "Time Tracking for Tech Companies",
+    "version": "7.5.162",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://toggl-open-source.github.io/toggldesktop/download/windows64-stable",
+            "hash": "5967842808BB73A7705AFDCA6B5FD7553DA5F4967B864E7E0F6D83525CFD9E13"
+        }
+    },
+    "checkver": {
+        "url": "https://toggl.github.io/toggldesktop/",
+        "regex": "releases/download/v([\\d.]+)/TogglDesktopInstaller-x64-([\\d.]+)\\.exe"
+
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/toggl-open-source/toggldesktop/releases/download/v$version/TogglDesktopInstaller-x64-$version.exe"
+            }
+        }
+    }
+}
