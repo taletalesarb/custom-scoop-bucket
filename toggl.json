@@ -5,8 +5,8 @@
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/toggl-open-source/toggldesktop/releases/download/v7.5.162/TogglDesktopInstaller-x64-7.5.162.exe",
-            "hash": "5967842808BB73A7705AFDCA6B5FD7553DA5F4967B864E7E0F6D83525CFD9E13"
+            "url": "https://github.com/toggl-open-source/toggldesktop/releases/download/v7.5.119/TogglDesktopInstaller-x64-7.5.119.exe",
+            "hash": "E46C141EF0E214092E230E40DEEB8AE19C50BACEC15385772BBE679DE6A355E8"
         }
     },
     "checkver": {
