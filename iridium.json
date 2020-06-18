@@ -18,5 +18,10 @@
             "Iridium\\iridium.exe",
             "iridium"
         ]
+    ],
+    "bin":[
+      [
+        "Iridium\\iridium.exe", "iridium"
+      ]
     ]
 }
