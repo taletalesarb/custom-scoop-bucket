@@ -1,1 +1,1 @@
-# scoop-bi-bucket
+# Scoop Extra Extras bucket
