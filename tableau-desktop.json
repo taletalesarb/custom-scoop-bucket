@@ -1,12 +1,12 @@
 {
     "homepage": "https://www.tableau.com/",
     "description": "Interactive data visualization software",
-    "version": "2020.2.0",
+    "version": "2022.2.1",
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.tableau.com/tssoftware/TableauDesktop-64bit-2020-2-0.exe",
-            "hash": "53418FFB683644BBC8290FD21EF0605F3F6DF09121E882224368A863D679960F"
+            "url": "https://downloads.tableau.com/tssoftwareregistered/TableauDesktop-64bit-2022-2-1.exe",
+            "hash": "EA11502DAD23D49CAB7CE5C410446B82DDDC9AACA9DC0388877C887ABF51A9E1"
         }
     },
     "depends": "dark",
